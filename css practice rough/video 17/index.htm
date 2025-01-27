@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+</head>
+<style>
+    .red {
+        background-color: red;
+        color: darkblue;
+    }
+
+    #green {
+        background-color: aqua;
+    }
+
+    div>p {
+        color: white;
+        background-color: black;
+    }
+
+    * {
+
+        padding: 5px;
+       
+    }
+    a:visited{
+        color: yellow;
+    }
+    a:link{
+        color: green;
+    }
+</style>
+
+<body>
+    <div class="red">
+        I am a div
+    </div>
+    <div id="green" class="red">i am div
+        <p>
+            how are you doing
+        </p>
+    </div>
+    <div>
+        <a href="https://google.com"> Google.com</a>
+    </div>
+
+</body>
+
+</html>
