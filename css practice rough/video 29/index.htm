@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(212, 207, 207);
+        }
+
+        .outermost {
+            background-color: white;
+            width: 10cm;
+            /* 80% of the viewport width */
+            height: 15cm;
+            /* 80% of the viewport height */
+            position: relative;
+
+            margin: auto;
+            margin-top: 3%;
+
+        }
+
+        .image {
+            width: 90%;
+            /* Image width 90% of the container */
+
+            height: auto;
+            /* Maintain aspect ratio */
+            margin-left: 5%;
+            margin-top: 5%;
+            border-radius: 10px;
+            
+        }
+
+        .spanner {
+            background-color: white;
+            margin-left: 5%;
+            width: 15%;
+            height: 5%;
+            border: 1px solid grey;
+            border-radius: 5px;
+        
+            padding: 2px;
+            display: inline;
+        }
+        .heading{
+            color: green;
+            background-color: white;
+            padding: 5px;
+        }
+        .paragraph{
+            color: grey;
+            background-color: white;
+            padding: 5px;
+        }
+        .footer{
+            background-color: rgb(130, 181, 225);
+            margin: auto;
+            position: absolute;
+            padding: 5px;
+            bottom: 0px;
+            color: rgb(8, 8, 142);
+            font-weight: 900;
+            left: 50%;
+            
+            margin-bottom: 2%;
+            border-radius: 10px;
+            border: 1px solid gray;
+            
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outermost">
+        <img src="image.png" alt="Centered Image" class="image" >
+        <div class="spanner">
+            Nature
+        </div>
+        <div class="spanner">
+            Lake
+        </div>
+        
+            <h1 class="heading">
+                Beauty of Nepal
+            </h1>
+        <p class="paragraph">
+        Nepal is very beautiful country of world. we all live in peace and wealthy condition. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, maiores.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, possimus harum! Accusamus ipsum, sint id blanditiis omnis, quasi fuga perferendis, dignissimos enim labore fugiat ullam reiciendis! Dolorem dolorum quo nulla?
+
+        </p>
+        <span class="footer">Read more</span>
+       
+    </div>
+
+</body>
+
+</html>
